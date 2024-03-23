@@ -625,7 +625,7 @@ VI. Online Appendix
 ```
 ---
 #### __FT-50. Insert General Statement__
-##### <font color='gray'>This template is used to insert a statement of any type before and after the target statement. It is primarily applied in scenarios such as adding context environment configurations for model runtime, specifying running devices, implementing gradient management, and optimizing conditions for model validation triggers.</font>
+##### <font color='gray'>This template is used to insert a statement of any type before and after the target statement. It is primarily applied in scenarios such as adding context environment configurations for model runtime, specifying execution devices, implementing gradient management, and optimizing conditions for model validation triggers.</font>
 ```python
 +  inserted_statement
    original_statement
@@ -636,7 +636,7 @@ VI. Online Appendix
 ```
 ---
 #### __FT-51. Delete General Statement__
-##### <font color='gray'>This template is used to delete the statement at the target position. It is primarily applied in scenarios such as removing erroneous logical statements, canceling context environment configurations for model runtime, reverting running devices to default settings, removing redundant gradient management configurations, and simplifying conditions for model validation triggers.</font>
+##### <font color='gray'>This template is used to delete the statement at the target position. It is primarily applied in scenarios such as removing erroneous logical statements, canceling context environment configurations for model runtime, reverting execution devices to default settings, removing redundant gradient management configurations, and simplifying conditions for model validation triggers.</font>
 ```python
 -  original_statement
 ```
@@ -685,7 +685,7 @@ VI. Online Appendix
 +  data = torch.Tensor(data.transpose(0, 2, 1))
 ```
 ---
-#### __(3). Model Running Device Modification__
+#### __(3). Model Execution Device Modification__
 ```python
 #  test-index: 2324
 -  labels = torch.arange(num_classes, dtype=torch.long)
