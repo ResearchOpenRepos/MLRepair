@@ -737,7 +737,7 @@ VI. Online Appendix
 +  return np.concatenate((g, g_sigma), axis=0)
 ```
 ---
-#### __(7). Model Running Control Flow Modification__
+#### __(7). Model Execution Control Flow Modification__
 ```python
 #  test-index: 220
 -  if self.clip > 0:
